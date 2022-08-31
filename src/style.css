@@ -1,9 +1,9 @@
 :root {
   font: 16px / 1 sans-serif;
-  --bright-sky: #80ced2;
+  --bright-sky: #cdf8fe;
   --night-sky: #85577e;
   --sun: #d5562b;
-  --sea: #5a9090;
+  --sea: #2cffff;
   --sand: #f7f0da;
   --asphalt: #2f3737;
   --lime: #b1d133;
@@ -17,13 +17,43 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: var(--bright-sky);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+nav {
+  display: block;
+  background-color: var(--sea);
+  justify-content: center;
+}
+
+#navitem {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+#footitem {
+  display: inline;
 }
 
 ul {
-  height: 100vh;
-  background-color: var(--sand);
-
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.breakout {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.main {
+  display: fex;
+  width: 75%;
 }
